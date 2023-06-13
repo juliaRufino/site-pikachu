@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 214, 36);
+    height: 100vh;
+    width: 100vw;
+}
+
+.header {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+}
+
+.menu {
+    display: flex;
+}
+
+.conteudoHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+    width: 100%;
+    position: relative;
+}
+
+.faixaPreta {
+    padding-left: 30rem;
+    background-color: rgb(30, 30, 29);
+    height: 30%;
+    width: 100%;
+}
+
+.conteudoHome::before {
+    content: '';
+    position: absolute;
+    background-image: url(./assets/img/pikachuHome.png);
+    background-size: cover;
+    width: 900px;
+    height: 900px;
+    top: 0;
+    right: 100px;
+}
+
+.faixaPreta h1 {
+    padding-top: 10px;
+    color: white;
+    font-size: 110px;
+    width: 35%;
+}
+
+h1 span {
+    color: rgb(255, 219, 31);
+}
+
+.mensagemHome {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
